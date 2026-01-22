@@ -11,7 +11,6 @@ class Solution:
             digit = x % 10
             x //= 10
 
-            # overflow check
             if rev > INT_MAX // 10 or (rev == INT_MAX // 10 and digit > 7):
                 return 0
 
